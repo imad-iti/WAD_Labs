@@ -45,3 +45,22 @@ body {
         border-color: rgba(74, 74, 74, 0.644);
     }
 }
+
+
+/* Back button */
+.back-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 8px 15px;
+    background-color: #2dc7ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #2dc7ff;
+    transform: scale(1.05);
+    transform: translateX(10px);
+}
