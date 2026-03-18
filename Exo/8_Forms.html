@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 8 - Forms</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>My first form</h1>
+  <form action="">
+  <fieldset>
+    <legend>Personal data</legend>
+    <input id="Mrs" type="radio" name="Gender">
+    <label for="Mrs">Mrs</label>
+    <input id="Miss" type="radio" name="Gender">
+    <label for="Miss">Miss</label>
+    <br>
+    <label for="Last-name">Last name: </label>
+    <input id="Last-name" type="text" name="Last name" placeholder="your last name" required>
+    <br>
+    <label for="First-name">First name: </label>
+    <input id="First-name" type="text" name="First name" placeholder="your first name" required>
+    <br>
+    <label for="date-birth">Date of birth:</label>
+    <input id="date-birth" type="date">
+    <br>
+    <label for="email">Mail:</label>
+    <input id="email" type="email" placeholder="your mail" required>
+    <br>
+    <label for="your-site">Your site:</label>
+    <input id="your-site" type="text" placeholder="https://www.">
+    <br>
+    <label for="code">Code:</label>
+    <input id="code" type="text">
+    <br>
+    <label for="country">Country:</label>
+
+    <select id="country">
+      <option>Algeria</option>
+      <option>United States</option=>
+      <option>United Kingdom</option>
+      <option>Morocco</option>
+      <option>France</option>
+      <option>Tunisia</option>
+    </select>
+
+    <br>
+    <label for="address">Address:</label>
+    <textarea id="address" rows="2" cols="30" placeholder="Your mailing address" required></textarea>
+  </fieldset>
+
+  <fieldset>
+    <legend>Skills</legend>
+    <label>HTML:</label>
+    <input type="range">
+    <br>
+    <div>
+      <h4>Client languages:</h4>
+
+      <label for="html-lang">HTML:</label>
+      <input type="checkbox" id="html-lang">
+      .......
+      <label for="css-lang">CSS:</label>
+      <input type="checkbox" id="css-lang">
+      .......
+      <label for="js-lang">JavaScript:</label>
+      <input type="checkbox" id="js-lang">
+      .......
+      <label for="xml-lang">XML:</label>
+      <input type="checkbox" id="xml-lang">
+    </div>
+
+    <h4>Server languages</h4>
+    <select>
+      <option>PHP</option>
+      <option>SQL</option>
+      <option>Node.js</option>
+      <option>Python</option>
+    </select>
+    <br><br>
+    <textarea rows="5" cols="50" placeholder="Describe yourself in a few lines" required></textarea>
+  </fieldset>
+
+  <fieldset>
+    <legend>Send us your photo</legend>
+    <input id="send-photo" type="file">
+    <br><br>
+    <input type="reset">
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="submit">
+  </fieldset>
+</form>
+
+
+  <a class="back-btn" href="../index.html"> Back to Main Page</a>
+</body>
+
+</html>
