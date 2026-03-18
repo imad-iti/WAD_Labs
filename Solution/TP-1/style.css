@@ -8,11 +8,10 @@
     color: white;
     text-decoration: none;
     border-radius: 15px;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease-in-out;
 }
 
 .back-btn:hover {
-    background-color: #2dc7ff;
     transform: scale(1.05);
     transform: translateX(10px);
 }
@@ -25,7 +24,7 @@
     color: white;
     text-decoration: none;
     border-radius: 15px;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease-in-out;
 }
 
 .source-btn:hover {
