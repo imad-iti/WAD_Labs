@@ -5,25 +5,30 @@ body {
     padding: 0;
     background: aliceblue;
 }
+#link {
+    display: flex;
+    justify-content: center;
+}
 
 .main-link {
-    display: block;
     text-decoration: none;
-    width: 320px;
-    height: 30px;
-    border: 3px solid #2dc7ff;
+    min-width: 100px;
+    min-height: 150px;
+    border: 3px solid black;
     border-radius: 20px;
-    margin: 15px auto;
+    margin: 70px 50px;
+    padding: 35px;
+
     align-content: center;
-    text-align: justify;
+    text-align: center;
+    
     font-size: larger;
-    padding: 5px 5px 5px 15px;
-    background: #ffffff;
+    color: black;
 }
 
 .main-link:hover {
     animation: large-font .7s forwards;
-    transform: translateX(65px);
+    transform: translateY(-10px);
 }
 
 @keyframes large-font {
