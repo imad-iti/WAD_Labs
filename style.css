@@ -3,64 +3,80 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    background: aliceblue;
-}
+    background-color:#f7f8fa;
+}    
+
+.nmb { margin-bottom: 0; }
+.html { background: #f46323; }
+.css { background: #2662b6; }
+.js { background: #fcd421; }
+
+
+
+/* LINKS */
 #link {
     display: flex;
     justify-content: center;
-}
+}    
 
-.main-link {
-    text-decoration: none;
-    min-width: 100px;
-    min-height: 150px;
+/* SERIES BUTTONS */
+.card-link {
     border: 3px solid black;
     border-radius: 20px;
     margin: 70px 50px;
-    padding: 35px;
+    transition: transform 0.3s ease-in-out;
+}    
 
-    align-content: center;
-    text-align: center;
-    
-    font-size: larger;
+.text {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     color: black;
-    transition: transform 0.3s ease-in-out;
+    font-size: 24px;
+    font-weight: bold;
+
+    transform: scale(0.6);
+    opacity: 0;
+    transition: 0.4s;
 }
-
-.main-link:hover {
-    animation: large-font .7s forwards;
-    transform: translateY(-10px);
-}
-
-@keyframes large-font {
-    0% {
-        font-size: larger;
-    }
-    20% {
-        color: #ffffff;
-    }
-    100% {
-        font-size: x-large;
-        color: #ffffff;
-        background: rgba(74, 74, 74, 0.644);
-        border-color: rgba(74, 74, 74, 0.644);
-    }
-}
-
-
-/* source button */
-.source-btn {
+.card {
+    position: relative;
     display: inline-block;
-    margin-top: 30px;
-    padding: 8px 15px;
-    background-color: #4a4a4a;
-    color: white;
-    text-decoration: none;
+    overflow: hidden;
     border-radius: 15px;
-    transition: transform 0.3s ease-in-out;
+}
+.card img {
+    max-height: 140px;
+    min-width: 250px;
+}
+.card-link:hover {
+    transform: translateY(-10px);
+}
+.card:hover img {
+    transform: scale(1.2);
+    opacity: 0.4;
+}
+.card:hover .text {
+    transform: scale(1);
+    opacity: 1;
 }
 
-.source-btn:hover {
-    transform: scale(1.05);
-    transform: translateY(-10px);
+
+
+.src-code-link {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+.src-code-link img {
+    max-height: 80px;
+    min-width: 240px;
+    border-radius: 20px;
+}
+
+.src-code-link:hover {
+    transform: scale(.95);
 }

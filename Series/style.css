@@ -5,6 +5,10 @@ body {
     padding: 0;
 }
 
+.html { background: #f46323; }
+.css { background: #2662b6; }
+.js { background: #fcd421; }
+
 .main-link {
     display: block;
     text-decoration: none;
@@ -47,7 +51,7 @@ body {
     display: inline-block;
     margin-top: 30px;
     padding: 8px 15px;
-    background-color: #00bbff;
+    background-color: gray;
     color: white;
     text-decoration: none;
     border: 2px solid black;
